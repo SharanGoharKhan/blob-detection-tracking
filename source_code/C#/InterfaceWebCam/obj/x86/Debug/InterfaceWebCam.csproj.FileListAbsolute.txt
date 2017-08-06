@@ -41,3 +41,5 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\InterfaceW
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\InterfaceWebCam\obj\x86\Debug\InterfaceWebCam.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\InterfaceWebCam\obj\x86\Debug\InterfaceWebCam.exe
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\InterfaceWebCam\obj\x86\Debug\InterfaceWebCam.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\InterfaceWebCam\obj\x86\Debug\InterfaceWebCam.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\InterfaceWebCam\obj\x86\Debug\InterfaceWebCam.pdb
