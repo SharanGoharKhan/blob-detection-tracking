@@ -29,3 +29,14 @@ C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\WebCamCapt
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\WebCamCapture\obj\Debug\WebCamCapture.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\WebCamCapture\obj\Debug\WebCamCapture.dll
 C:\Users\Admin\Documents\Visual Studio 2015\Projects\webcamCapture\C#\WebCamCapture\obj\Debug\WebCamCapture.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\bin\Debug\WebCamCapture.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\bin\Debug\WebCamCapture.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\bin\Debug\Emgu.CV.UI.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\bin\Debug\Emgu.CV.World.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\bin\Debug\Emgu.CV.UI.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\bin\Debug\Emgu.CV.World.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\obj\Debug\WebCamCapture.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\obj\Debug\WebCamCapture.UserControl1.resources
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\obj\Debug\WebCamCapture.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\obj\Debug\WebCamCapture.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\blob-detection-tracking\source_code\C#\WebCamCapture\obj\Debug\WebCamCapture.pdb

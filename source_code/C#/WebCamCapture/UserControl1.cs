@@ -6,6 +6,8 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Emgu.CV;
+using Emgu.Util;
 namespace WebCamCapture
 {
     public partial class UserControl1 : UserControl, IDisposable
