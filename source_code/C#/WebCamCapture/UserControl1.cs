@@ -6,7 +6,6 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-
 namespace WebCamCapture
 {
     public partial class UserControl1 : UserControl, IDisposable
