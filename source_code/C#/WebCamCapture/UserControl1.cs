@@ -172,10 +172,15 @@ namespace WebCamCapture
                 IDataObject tempObj = Clipboard.GetDataObject();
                 Image tempImg = (System.Drawing.Bitmap)tempObj.GetData(DataFormats.Bitmap);
 
-                ImgWebCam.Image = tempImg;
-
+                //ImgWebCam.Image = tempImg;
+                Mat img1 = new Mat(200, 400, Emgu.CV.CvEnum.DepthType.Cv8U, 3);
+                img1.SetTo(new Emgu.CV.Structure.Bgr(255, 0, 0).MCvScalar);
+                CvInvoke.PutText(img1, "Hello, World", new System.Drawing.Point(10, 80), Emgu.CV.CvEnum.FontFace.HersheyComplex, 1.0, new Emgu.CV.Structure.Bgr(0, 255, 0).MCvScalar);
+                ImgWebCam.Image = img1.Bitmap;
+                
+                
                 ImgWebCam.Refresh();
-
+                previewImageBox.Refresh();
                 Application.DoEvents();
 
                 if (!bStopped)

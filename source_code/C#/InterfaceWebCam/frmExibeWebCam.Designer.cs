@@ -39,7 +39,7 @@
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 38);
             this.btnStart.TabIndex = 1;
-            this.btnStart.Text = "Iniciar WebCam";
+            this.btnStart.Text = "Start WebCam";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -49,7 +49,7 @@
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 38);
             this.btnStop.TabIndex = 2;
-            this.btnStop.Text = "Finalizar WebCam";
+            this.btnStop.Text = "Stop WebCam";
             this.btnStop.UseVisualStyleBackColor = true;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
@@ -58,14 +58,14 @@
             this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userControl11.Location = new System.Drawing.Point(29, 42);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(583, 472);
+            this.userControl11.Size = new System.Drawing.Size(1270, 472);
             this.userControl11.TabIndex = 0;
             // 
             // frmExibeWebCam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(664, 595);
+            this.ClientSize = new System.Drawing.Size(1311, 595);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.userControl11);

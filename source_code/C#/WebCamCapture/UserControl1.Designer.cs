@@ -30,16 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.ImgWebCam = new System.Windows.Forms.PictureBox();
+            this.previewImageBox = new System.Windows.Forms.PictureBox();
             this.tmrRefrashFrame = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.previewImageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgWebCam)).BeginInit();
             this.SuspendLayout();
+            //
+            // PictureBox
+            //
+            this.previewImageBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.previewImageBox.Location = new System.Drawing.Point(0, 0);
+            this.previewImageBox.Name = "previewImageBox";
+            this.previewImageBox.Size = new System.Drawing.Size(500, 500);
+            this.previewImageBox.TabIndex = 0;
+            this.previewImageBox.TabStop = false;
             // 
             // ImgWebCam
             // 
             this.ImgWebCam.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImgWebCam.Location = new System.Drawing.Point(0, 0);
             this.ImgWebCam.Name = "ImgWebCam";
-            this.ImgWebCam.Size = new System.Drawing.Size(1500, 1500);
+            this.ImgWebCam.Size = new System.Drawing.Size(500, 500);
             this.ImgWebCam.TabIndex = 0;
             this.ImgWebCam.TabStop = false;
             // 
@@ -52,14 +63,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ImgWebCam);
+            this.Controls.Add(this.previewImageBox);
             this.Name = "UserControl1";
+            ((System.ComponentModel.ISupportInitialize)(this.previewImageBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgWebCam)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.PictureBox previewImageBox;
         private System.Windows.Forms.PictureBox ImgWebCam;
         private System.Windows.Forms.Timer tmrRefrashFrame;
     }
