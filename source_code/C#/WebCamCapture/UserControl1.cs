@@ -8,6 +8,8 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Emgu.CV;
 using Emgu.Util;
+using Emgu.CV.Util;
+using Emgu.CV.Structure;
 namespace WebCamCapture
 {
     public partial class UserControl1 : UserControl, IDisposable
@@ -171,14 +173,14 @@ namespace WebCamCapture
 
                 IDataObject tempObj = Clipboard.GetDataObject();
                 Image tempImg = (System.Drawing.Bitmap)tempObj.GetData(DataFormats.Bitmap);
-
-                //ImgWebCam.Image = tempImg;
-                Mat img1 = new Mat(200, 400, Emgu.CV.CvEnum.DepthType.Cv8U, 3);
-                img1.SetTo(new Emgu.CV.Structure.Bgr(255, 0, 0).MCvScalar);
-                CvInvoke.PutText(img1, "Hello, World", new System.Drawing.Point(10, 80), Emgu.CV.CvEnum.FontFace.HersheyComplex, 1.0, new Emgu.CV.Structure.Bgr(0, 255, 0).MCvScalar);
-                ImgWebCam.Image = img1.Bitmap;
-                
-                
+                ImgWebCam.Image = tempImg;
+                using (Emgu.CV.Image<Bgr, byte> orignalFrame = new Image<Bgr, byte>((Bitmap)ImgWebCam.Image))
+                {
+                    //convert image into gray
+                    Image<Bgr, byte> image = orignalFrame.Resize(ImgWebCam.Size.Width, ImgWebCam.Size.Height, 0);
+                    Image<Gray, byte> frame = image.Convert<Gray, byte>();
+                    ImgWebCam.Image = frame.ToBitmap();
+                }
                 ImgWebCam.Refresh();
                 previewImageBox.Refresh();
                 Application.DoEvents();
