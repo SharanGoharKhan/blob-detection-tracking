@@ -14,6 +14,9 @@ namespace WebCamCapture
 {
     public partial class UserControl1 : UserControl, IDisposable
     {
+        #region Global Variables
+        private Emgu.CV.Image<Bgr, byte> previousFrame = null;
+        #endregion
         #region Referência do projeto e informações
 
         //http://blog.marcio-pulcinelli.com/2011/06/05/acessando-webcam-com-c/
@@ -179,7 +182,25 @@ namespace WebCamCapture
                     //convert image into gray
                     Image<Bgr, byte> image = orignalFrame.Resize(ImgWebCam.Size.Width, ImgWebCam.Size.Height, 0);
                     Image<Gray, byte> frame = image.Convert<Gray, byte>();
-                    ImgWebCam.Image = frame.ToBitmap();
+                    //Perform absdiff only if it's the second frame else store it in the global first frame
+                    if(this.previousFrame != null)
+                    {
+                        //convert the previous frame to gray
+                        Image<Gray, byte> previousFrameGray = previousFrame.Convert<Gray, byte>();
+                        previousFrameGray = previousFrameGray.Resize(ImgWebCam.Size.Width, ImgWebCam.Size.Height, 0);
+                        Image<Gray, byte> BgDifference = new Image<Gray, byte>(ImgWebCam.Width, ImgWebCam.Height);
+                        CvInvoke.AbsDiff(previousFrameGray, frame, BgDifference);
+                        //assign the current frame to previousFrame
+                        this.previousFrame = new Image<Bgr, byte>((Bitmap)ImgWebCam.Image);
+                        ImgWebCam.Image = BgDifference.ToBitmap();
+                        //ImgWebCam.Image = image.ToBitmap();
+                    }
+                    else
+                    {
+                        this.previousFrame = new Image<Bgr, byte>((Bitmap)ImgWebCam.Image);
+                        this.previousFrame = this.previousFrame.Resize(ImgWebCam.Size.Width, ImgWebCam.Size.Height, 0);
+                    }
+
                 }
                 ImgWebCam.Refresh();
                 Application.DoEvents();
