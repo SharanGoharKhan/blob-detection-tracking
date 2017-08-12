@@ -35,7 +35,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(29, 535);
+            this.btnStart.Location = new System.Drawing.Point(29, 653);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 38);
             this.btnStart.TabIndex = 1;
@@ -45,7 +45,7 @@
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(110, 535);
+            this.btnStop.Location = new System.Drawing.Point(110, 653);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 38);
             this.btnStop.TabIndex = 2;
@@ -56,16 +56,16 @@
             // userControl11
             // 
             this.userControl11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userControl11.Location = new System.Drawing.Point(29, 42);
+            this.userControl11.Location = new System.Drawing.Point(29, 12);
             this.userControl11.Name = "userControl11";
-            this.userControl11.Size = new System.Drawing.Size(1270, 472);
+            this.userControl11.Size = new System.Drawing.Size(1270, 635);
             this.userControl11.TabIndex = 0;
             // 
             // frmExibeWebCam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 595);
+            this.ClientSize = new System.Drawing.Size(1311, 733);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.userControl11);

@@ -182,7 +182,6 @@ namespace WebCamCapture
                     ImgWebCam.Image = frame.ToBitmap();
                 }
                 ImgWebCam.Refresh();
-                previewImageBox.Refresh();
                 Application.DoEvents();
 
                 if (!bStopped)
